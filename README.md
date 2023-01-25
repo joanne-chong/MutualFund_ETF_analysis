@@ -23,7 +23,7 @@ These models are aimed at helping fund managers and potential investors evaluate
 
 ## About the datasets
 The datasets were taken from [Kaggle](https://www.kaggle.com/datasets/stefanoleone992/mutual-funds-and-etfs), covering US-based mutual fund and ETF information scraped from Yahoo Finance. The dataset was last updated in November 2021. The files we'll be using for this project:
-- `MutualFunds.csv`: This dataset contains 23,782 mutual funds, including yearly and quarterly fund returns from 2000 to the first three quarters of 2021
+- `MutualFunds.csv`: This dataset contains 23,782 mutual funds, including yearly and quarterly fund returns from 2000 to the first three quarters of 2021. The dataset and the processed datasets can be found [here](https://drive.google.com/drive/folders/16XIzuLcKMnxGcqjRc5XfT_gDTKouQch2?usp=share_link)
 - `ETFs.csv`: This dataset contains 2,309 ETFs, including yearly fund returns from 2000 to 2020
 
 NOTE: Full data dictionary can be found [here](Part_1_Cleaning.ipynb)
