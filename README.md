@@ -23,7 +23,7 @@ These models are aimed at helping fund managers and potential investors evaluate
 
 ## About the datasets
 The datasets were taken from [Kaggle](https://www.kaggle.com/datasets/stefanoleone992/mutual-funds-and-etfs), covering US-based mutual fund and ETF information scraped from Yahoo Finance. The dataset was last updated in November 2021. The files we'll be using for this project:
-- `MutualFunds.csv`: This dataset contains 23,782 mutual funds, including yearly and quarterly fund returns from 2000 to the first three quarters of 2021. The dataset and the processed datasets can be found [here](https://drive.google.com/drive/folders/16XIzuLcKMnxGcqjRc5XfT_gDTKouQch2?usp=share_link)
+- `MutualFunds.csv`: This dataset contains 23,782 mutual funds, including yearly and quarterly fund returns from 2000 to the first three quarters of 2021
 - `ETFs.csv`: This dataset contains 2,309 ETFs, including yearly fund returns from 2000 to 2020
 
 NOTE: Full data dictionary can be found [here](Part_1_Cleaning.ipynb)
@@ -85,9 +85,7 @@ The best parameters for:
 `max_depth` represents the depth of each tree in the forest, to capture information about the data. The mutual fund prediction didn't require any parameters for this as the volume of data was sufficient to learn from, meanwhile the ETF prediction needed more depth to be able to learn from the dataset.
 
 ## Conclusion
-Overall, we were able to create a model to generate near-accurate prediction for mutual funds - making it the better investment option solely based on prediction accuracy. 
-
-The 10 most important features that would impact the accuracy of the model: 
+Overall, we were able to create a model to generate near-accurate prediction for mutual funds and identify the features that were most helpful in determining the accuracy of the model: 
 1. Investment type (Growth)
 2. Morningstar overall rating
 3. Stocks asset breakdown
@@ -99,7 +97,9 @@ The 10 most important features that would impact the accuracy of the model:
 9. Morningstar risk rating
 10. Fund sector (Technology)
 
-However, this does not mean that ETF is not a worthy investment alternative. As we saw from the EDA section that ETFs have been able to keep up with market and cost investors a lot less, enabling them to earn more for less. Furthermore, ETFs have been gaining traction over the years and will continue to stay. 
+In an [academic study of mutual fund performance](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3768753), Random Forest model is useful in exploiting nonlinearities and interactions, which help investors select high-performing funds (positive alpha). This is something we could explore in further study to better understand how to use predictive model to identify high-performing funds.
+
+However based on just our results - we were only able to create a more reliable model for mutual funds. This does not indicate that it is a more worthy investment compared to ETF. As we saw from the EDA section that ETFs have been able to keep up with market and cost investors a lot less, enabling them to earn more for less. Furthermore, ETFs have been gaining traction over the years and will continue to stay.  
 
 ## Limitations
 1. The lack of quality ETF dataset has certainly impacted our EDA and modeling section. Fortunately, as ETF gains more traction, there will be more effort to keep record of the data and eventually create a better prediction model. 
